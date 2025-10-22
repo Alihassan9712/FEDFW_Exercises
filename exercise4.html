@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Treats Bakery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Sweet Treats</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="slideshow">
+    <div class="slide"><img src="https://via.placeholder.com/800x400/ff9999/fff?text=Cupcakes"></div>
+    <div class="slide"><img src="https://via.placeholder.com/800x400/99ccff/fff?text=Cookies"></div>
+    <div class="slide"><img src="https://via.placeholder.com/800x400/ffc266/fff?text=Bread"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 Sweet Treats Bakery</p>
+  </footer>
+
+  <script>
+    let i = 0, s = document.getElementsByClassName("slide");
+    function show() {
+      for (let j = 0; j < s.length; j++) s[j].style.display = "none";
+      i = (i + 1 > s.length) ? 1 : i + 1;
+      s[i - 1].style.display = "block";
+      setTimeout(show, 3000);
+    }
+    show();
+  </script>
+</body>
+</html>
