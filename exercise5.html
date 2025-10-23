@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Register</h1>
+  <form id="regForm" novalidate>
+    <input type="text" id="fullname" placeholder="Full Name" required>
+    <small></small>
+
+    <input type="email" id="email" placeholder="Email" required>
+    <small></small>
+
+    <input type="password" id="password" placeholder="Password" required>
+    <small></small>
+
+    <input type="tel" id="phone" placeholder="Phone Number" required pattern="\d{10}">
+    <small></small>
+
+    <button type="submit">Register</button>
+    <p id="successMsg"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
