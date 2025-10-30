@@ -1,0 +1,14 @@
+{
+  "books": [
+    {
+      "title": "Updated Book",
+      "author": "Updated Author",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "title": "Learning Spring Boot",
+      "author": "Jane Smith"
+    }
+  ]
+}
